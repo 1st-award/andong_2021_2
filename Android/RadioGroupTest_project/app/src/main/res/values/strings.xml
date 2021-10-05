@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RadioGroupTest_project</string>
+    <string name="strMale">남자</string>
+    <string name="strFemale">여자</string>
+</resources>

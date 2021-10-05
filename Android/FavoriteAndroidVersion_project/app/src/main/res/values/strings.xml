@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FavoriteAndroidVersion_project</string>
+    <string name="strTextView1">선택을 시작하겠습니까?</string>
+    <string name="strSwitch">시작함</string>
+    <string name="strTextView2">좋아하는 안드로이드 버전은?</string>
+    <string name="strPie">파이(9.0)</string>
+    <string name="strQ">Q(10.0)</string>
+    <string name="strR">R(11.0)</string>
+    <string name="strButton1">종료</string>
+    <string name="strButton2">처음으로</string>
+</resources>

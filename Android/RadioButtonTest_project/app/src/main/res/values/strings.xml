@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RadioButtonTest_project</string>
+    <string name="strTextView">성별 선택</string>
+    <string name="strRBtn1">여성</string>
+    <string name="strRBtn2">남성</string>
+</resources>

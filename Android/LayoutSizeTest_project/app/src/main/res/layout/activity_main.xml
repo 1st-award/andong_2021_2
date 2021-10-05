@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tool="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!-- 크기를 match_parent 와 wrap_content말고도 px단위로 조절할 수 있다 -->
+    <Button
+            android:layout_width="1080px"
+            android:layout_height="1920px"
+            android:text="@string/btn1"/>
+</LinearLayout>

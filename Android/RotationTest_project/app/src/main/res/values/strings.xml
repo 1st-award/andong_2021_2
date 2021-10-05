@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RotationTest_project</string>
+    <string name="strButton1">버튼 1</string>
+    <string name="strButton2">버튼 2</string>
+    <string name="strButton3">버튼 3</string>
+</resources>

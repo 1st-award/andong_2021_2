@@ -34,7 +34,7 @@ if confirm == "OK":
     print("URL OPEN")
     # Login
     webbrowser.get(CHROME_PATH).open(URL)
-    time.sleep(0.3)
+    time.sleep(3)
     pyautogui.hotkey("F11")
     pyautogui.typewrite(student_id, interval=0.01)
     time.sleep(0.1)

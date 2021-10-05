@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SimpleCalc_project</string>
+    <string name="strEditText1">숫자1</string>
+    <string name="strEditText2">숫자2</string>
+    <string name="strButton1">더하기</string>
+    <string name="strButton2">빼기</string>
+    <string name="strButton3">곱하기</string>
+    <string name="strButton4">나누기</string>
+    <string name="strButton5">나머지 값</string>
+    <string name="strTextView1">계산결과: </string>
+    <string name="toastMessage">0으로 나눌 수 <없습니다 class=""></없습니다></string>
+</resources>

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!-- CheckBox 중복 체크가 가능하다 checked="true"를 하면 체크가 되어있는 채로 생성된다. 공백 시, checked="false"이다.-->
+    <CheckBox
+            android:id="@+id/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strCheckBox1"
+            android:checked="true"/>
+
+    <!-- checked="false" -->
+    <CheckBox
+            android:id="@+id/iphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strCheckBox2"/>
+
+    <CheckBox
+            android:id="@+id/window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strCheckBox3"
+            android:checked="true"/>
+
+
+</LinearLayout>

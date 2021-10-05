@@ -1,0 +1,40 @@
+<!-- visibility를 이용해 버튼을 사라지게 할 수 있다 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- visibility default(visible) -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strButton1"/>
+
+    <!-- visibility invisible -->
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="@string/strButton2"/>
+
+    <!-- visibility visible -->
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="@string/strButton3"/>
+
+    <!-- visibility gone -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/strButton4"/>
+
+    <!-- visibility default -->
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strButton5"/>
+</LinearLayout>
