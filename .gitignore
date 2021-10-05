@@ -9,6 +9,32 @@
 *.ap_
 *.aab
 
+AndroidManifest.xml
+build.gradle
+compiler.xml
+colors.xml
+ExampleUnitTest.java
+ExampleInstrumentedTest.java
+gradlew
+gradlew.bat
+gradle.xml
+gradle.properties
+gradle-wrapper.properties
+ic_launcher.xml
+ic_launcher.png
+ic_launcher_round.xml
+ic_launcher_round.png
+ic_launcher_foreground.xml
+ic_launcher_background.xml
+jarRepositories.xml
+misc.xml
+modules.xml
+proguard-rules.pro
+runConfigurations.xml
+settings.gradle
+themes.xml
+uiDesigner.xml
+
 # Files for the ART/Dalvik VM
 *.dex
 
