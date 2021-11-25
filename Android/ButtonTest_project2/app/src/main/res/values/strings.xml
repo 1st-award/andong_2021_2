@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ButtonTest_project</string>
+    <string name="Button1">네이트 홈페이지 열기</string>
+    <string name="Button2">911 긴급전화 걸기</string>
+    <string name="Button3">갤러리 열기</string>
+    <string name="Button4">끝내기</string>
+</resources>

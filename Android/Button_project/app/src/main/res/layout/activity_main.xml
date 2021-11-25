@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <EditText
+            android:id="@+id/EditText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="여기에 입력하세요"/>
+
+    <Button
+            android:id="@+id/Button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="글자 나타내기"/>
+
+    <Button
+            android:id="@+id/Button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="홈페이지 열기"/>
+
+    <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <RadioButton
+                android:id="@+id/RButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q(10)"/>
+
+        <RadioButton
+                android:id="@+id/RButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R(11)"/>
+    </RadioGroup>
+
+   <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"/>
+</LinearLayout>

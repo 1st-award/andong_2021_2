@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="5"
+        android:rowCount="8">
+
+    <EditText
+            android:id="@+id/EditText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+            android:hint="@string/FirstNumber"/>
+
+    <EditText
+            android:id="@+id/EditText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+            android:hint="@string/SecondNumber"/>
+
+    <Button
+            android:id="@+id/Button0"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/Button0"/>
+
+    <Button
+            android:id="@+id/Button1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/Button1"/>
+
+    <Button
+            android:id="@+id/Button2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/Button2"/>
+    <Button
+            android:id="@+id/Button3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/Button3"/>
+    <Button
+            android:id="@+id/Button4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/Button4"/>
+    <Button
+            android:id="@+id/Button5"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/Button5"/>
+    <Button
+            android:id="@+id/Button6"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/Button6"/>
+    <Button
+            android:id="@+id/Button7"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/Button7"/>
+    <Button
+            android:id="@+id/Button8"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/Button8"/>
+    <Button
+            android:id="@+id/Button9"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/Button9"/>
+
+    <Button
+            android:id="@+id/ButtonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+            android:text="@string/ButtonAdd"/>
+
+    <Button
+            android:id="@+id/ButtonSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+            android:text="@string/ButtonSub"/>
+
+    <Button
+            android:id="@+id/ButtonMul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+            android:text="@string/ButtonMul"/>
+
+    <Button
+            android:id="@+id/ButtonDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+            android:text="@string/ButtonDiv"/>
+
+    <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            android:text="@string/Result"/>
+</GridLayout>

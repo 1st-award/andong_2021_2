@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AlertDialogTest3_project</string>
+    <string name="user_name">사용자 이름</string>
+    <string name="email">이메일</string>
+    <string name="click">여기를 클릭</string>
+</resources>

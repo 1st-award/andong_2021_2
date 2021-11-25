@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ButtonTest_project</string>
+    <string name="CheckBox1">Enabled 속성</string>
+    <string name="CheckBox2">Clickable 속성</string>
+    <string name="CheckBox3">45도 회전</string>
+    <string name="Button1">Button</string>
+</resources>
