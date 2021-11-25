@@ -8,97 +8,74 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-    TextView textView;
-    Switch startSwitch;
+    TextView textView1, textView2;
+    Switch switch1;
     RadioGroup radioGroup;
-    RadioButton pie, q, r;
+    Button button1, button2;
     ImageView imageView;
-    Button exit, reset;
-
-    // Object 출력 or 비출력 스위칭 함수 (View.VISIBLE -> 0, View.INVISIBLE -> 4)
-    private void switchVisible(int switching) {
-        textView.setVisibility(switching);
-        radioGroup.setVisibility(switching);
-        imageView.setVisibility(switching);
-        exit.setVisibility(switching);
-        reset.setVisibility(switching);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("안드로이드 사진 보기");
-        // ** activity_main.xml에 생성한 위젯을 변수에 대입 **
-        textView = (TextView) findViewById(R.id.TextView2);
-        startSwitch = (Switch) findViewById(R.id.StartSwitch);
 
-        radioGroup = (RadioGroup) findViewById(R.id.RadioGroup1);
-        pie = (RadioButton) findViewById(R.id.Pie);
-        q = (RadioButton) findViewById(R.id.Q);
-        r = (RadioButton) findViewById(R.id.R);
+        textView1 = findViewById(R.id.TextView1);
+        textView2 = findViewById(R.id.TextView2);
+        switch1 = findViewById(R.id.Switch1);
+        radioGroup = findViewById(R.id.RadioGroup);
+        button1 = findViewById(R.id.Button1);
+        button2 = findViewById(R.id.Button2);
+        imageView = findViewById(R.id.ImageView);
 
-        imageView = (ImageView) findViewById(R.id.ImageView1);
-        exit = (Button) findViewById(R.id.Button1);
-        reset = (Button) findViewById(R.id.Button2);
-        // ***********************************************
-        // 시작함 Button On/Off 감지
-        startSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-                // 시작함 Switch가 On일 때 나머지 Object visible로 변환
-                if(startSwitch.isChecked() == true)
-                    switchVisible(View.VISIBLE);
-                // 시작함 Switch가 Off일 때 Object invisible로 변환
-                else
-                    switchVisible(View.INVISIBLE);
-            }
-        });
-
-        // RadioButton들 변화 감지
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            // RadioButton 변경에 따라 Image가 바뀜
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                switch (radioGroup.getCheckedRadioButtonId()) {
-                    case R.id.Pie:
-                        imageView.setImageResource(R.drawable.p9);
-                        break;
-                    case R.id.Q:
-                        imageView.setImageResource(R.drawable.q10);
-                        break;
-                    case R.id.R:
-                        imageView.setImageResource(R.drawable.r11);
-                        break;
-                    default:
-                        Toast.makeText(getApplicationContext(), "버전을 먼저 선택하세요.", Toast.LENGTH_SHORT).show();
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                if(isChecked) {
+                    radioGroup.setVisibility(View.VISIBLE);
+                    imageView.setVisibility(View.VISIBLE);
+                    button1.setVisibility(View.VISIBLE);
+                    button2.setVisibility(View.VISIBLE);
+                }
+                else {
+                    radioGroup.setVisibility(View.INVISIBLE);
+                    imageView.setVisibility(View.INVISIBLE);
+                    button1.setVisibility(View.INVISIBLE);
+                    button2.setVisibility(View.INVISIBLE);
                 }
             }
         });
 
-        // 프로그램 종료 버튼
-        exit.setOnClickListener(new View.OnClickListener() {
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onClick(View view) {
-                // 시스템 종료 코드
-                System.exit(1);
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch(radioGroup.getCheckedRadioButtonId()) {
+                    case R.id.RButton1:
+                        imageView.setImageResource(R.drawable.p9);
+                        break;
+                    case R.id.RButton2:
+                        imageView.setImageResource(R.drawable.q10);
+                        break;
+                    case R.id.RButton3:
+                        imageView.setImageResource(R.drawable.r11);
+                        break;
+                    default:
+                }
             }
         });
 
-        // 처음으로 가는 버튼
-        reset.setOnClickListener(new View.OnClickListener() {
+        button1.setOnClickListener(v -> {
+            finish();
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                // image 초기화
-                imageView.clearAnimation();
-                // Radio Button 체크 초기화
-                pie.setChecked(false);
-                q.setChecked(false);
-                r.setChecked(false);
-                // Object invisible
-                switchVisible(View.INVISIBLE);
-                // 시작함 Switch 체크 초기화
-                startSwitch.setChecked(false);
+            public void onClick(View v) {
+                radioGroup.clearCheck();
+                radioGroup.setVisibility(View.INVISIBLE);
+                textView2.setVisibility(View.INVISIBLE);
+                imageView.setImageResource(0);
+                imageView.setVisibility(View.INVISIBLE);
+                switch1.setChecked(false);
             }
         });
     }
