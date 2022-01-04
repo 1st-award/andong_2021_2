@@ -27,23 +27,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo);
-
+    public void onCreateContextMenu(ContextMenu contextMenu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(contextMenu,v,menuInfo);
         MenuInflater mInflater = getMenuInflater();
-        if(v == button1) {
-            menu.setHeaderTitle("배경색 변경");
-            mInflater.inflate(R.menu.menu1, menu);
+
+        if (v == button1) {
+            contextMenu.setHeaderTitle("배경색 변경");
+            mInflater.inflate(R.menu.menu1, contextMenu);
         }
-        if(v == button2) {
-            mInflater.inflate(R.menu.menu2, menu);
+        if (v == button2) {
+            mInflater.inflate(R.menu.menu2, contextMenu);
         }
     }
 
-
     @Override
-    public boolean onContextItemSelected(MenuItem item) {
-        switch(item.getItemId()) {
+    public boolean onContextItemSelected(MenuItem menuItem) {
+        switch(menuItem.getItemId()) {
             case R.id.itemRed:
                 baseLayout.setBackgroundColor(Color.RED);
                 return true;

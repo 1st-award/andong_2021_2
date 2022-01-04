@@ -1,5 +1,6 @@
 package com.example.tabhosttest_project;
 
+import android.app.Activity;
 import android.app.TabActivity;
 import android.widget.TabHost;
 import androidx.appcompat.app.AppCompatActivity;

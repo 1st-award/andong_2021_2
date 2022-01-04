@@ -34,22 +34,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.btnRotate:
-                imageView.setRotation(Float.parseFloat(setInputRotate.getText().toString()));
-                return true;
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch(menuItem.getItemId()) {
             case R.id.pic1:
                 imageView.setImageResource(R.drawable.pic1);
-                item.setChecked(true);
                 return true;
             case R.id.pic2:
                 imageView.setImageResource(R.drawable.pic2);
-                item.setChecked(true);
                 return true;
             case R.id.pic3:
                 imageView.setImageResource(R.drawable.pic3);
-                item.setChecked(true);
                 return true;
         }
         return false;

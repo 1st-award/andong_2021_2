@@ -25,21 +25,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-
-        menu.add(0, 1, 0, "배경색(빨강");
-        menu.add(0, 2, 0, "배경색(초록)");
-        menu.add(0, 3, 0, "배경색(파랑)");
-
-        SubMenu subMenu = menu.addSubMenu("버튼 변경 >> ");
-        subMenu.add(0, 4, 0, "버튼 45도 회전");
-        subMenu.add(0, 5 ,0, "버튼 2배 확대");
-
+        menu.add(0, 1, 0, "배경색 (빨강)");
+        menu.add(0, 2, 0, "배경색 (초록)");
+        menu.add(0, 3, 0, "배경색 (파랑)");
+        SubMenu sMenu = menu.addSubMenu("버튼 변경");
+        sMenu.add(0, 4, 0, "45도 회전");
+        sMenu.add(0, 5, 0, "2배 크게");
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()) {
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch(menuItem.getItemId()) {
             case 1:
                 baseLayout.setBackgroundColor(Color.RED);
                 return true;
@@ -54,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case 5:
                 button.setScaleX(2);
-                return true;
         }
         return false;
     }

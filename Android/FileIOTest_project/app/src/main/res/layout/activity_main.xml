@@ -4,23 +4,10 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
-    <DatePicker
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:datePickerMode="spinner"
-            android:calendarViewShown="false"
-            android:id="@+id/datePicker"/>
-    <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/edtDiary"
-            android:background="#00ff00"
-            android:lines="8"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnWrite"
-        android:enabled="false"
-        android:text="Button"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/writeFile"
+            android:text="내장 메모리에 파일 쓰기"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/readFile"
+            android:text="내장 메모리에 파일 읽기"/>
 </LinearLayout>

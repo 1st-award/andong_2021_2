@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplication(), "확인을 눌렀네요", Toast.LENGTH_SHORT).show();
                     }
                 });
+                dlg.setNegativeButton("취소", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(getApplicationContext(), "취소를 눌렀네요", Toast.LENGTH_SHORT).show();
+                    }
+                });
                 dlg.show();
             }
         });
